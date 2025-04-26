@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Spesial DE4YOU YT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .promo-container {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 500px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #3b82f6;
+            animation: glow 2s infinite alternate;
+        }
+        
+        .promo-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+            z-index: 0;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px #3b82f6; }
+            100% { box-shadow: 0 0 20px #3b82f6, 0 0 30px #3b82f6; }
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0;
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-top: 5px;
+        }
+        
+        .promo-section {
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3b82f6;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::before {
+            content: '✨';
+            margin-right: 8px;
+        }
+        
+        .promo-item {
+            background: rgba(30, 41, 59, 0.7);
+            border-left: 3px solid #3b82f6;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 0 8px 8px 0;
+            display: flex;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .promo-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+        }
+        
+        .promo-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+        
+        .promo-item:hover::after {
+            transform: translateX(100%);
+        }
+        
+        .item-name {
+            font-weight: 600;
+        }
+        
+        .item-price {
+            font-weight: 700;
+            color: #10b981;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #94a3b8;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .expiry {
+            background: rgba(220, 38, 38, 0.2);
+            color: #f87171;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: 600;
+            animation: shake 0.5s infinite alternate;
+        }
+        
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(5px); }
+        }
+        
+        .cta-button {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(59, 130, 246, 0.6);
+        }
+        
+        .cta-button:active {
+            transform: translateY(1px);
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #8b5cf6, #3b82f6);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .cta-button:hover::before {
+            opacity: 1;
+        }
+        
+        .whatsapp-icon {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #ef4444;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            transform: rotate(15deg);
+            animation: bounce 1s infinite alternate;
+        }
+        
+        @keyframes bounce {
+            0% { transform: rotate(15deg) translateY(0); }
+            100% { transform: rotate(15deg) translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-container">
+        <div class="badge">HOT PROMO!</div>
+        
+        <div class="header">
+            <h1 class="title">PROMO SPESIAL DE4YOU</h1>
+            <p class="subtitle">Diskon Terbatas - Jangan Sampai Kehabisan!</p>
+        </div>
+        
+        <div class="promo-section">
+            <h2 class="section-title">Promo Panel Pterodactyl</h2>
+            
+            <div class="promo-item">
+                <span class="item-name">Panel Priv Unli</span>
+                <span class="item-price">10K</span>
+            </div>
+            
+            <div class="promo-item">
+                <span class="item-name">Panel Pub Unli</span>
+                <span class="item-price">5K</span>
+            </div>
+        </div>
+        
+        <div class="promo-section">
+            <h2 class="section-title">Promo Script Bot WA</h2>
+            
+            <div class="promo-item">
+                <span class="item-name">Hoshino No Up</span>
+                <span class="item-price">60K</span>
+            </div>
+            
+            <div class="promo-item">
+                <span class="item-name">Hoshino Up</span>
+                <span class="item-price">90K</span>
+            </div>
+            
+            <div class="promo-item">
+                <span class="item-name">Sc Pushkontak</span>
+                <span class="item-price">10K</span>
+            </div>
+            
+            <div class="promo-item">
+                <span class="item-name">Sc Cpanel Only</span>
+                <span class="item-price">10K</span>
+            </div>
+        </div>
+        
+        <div class="promo-section">
+            <h2 class="section-title">Promo ADP Own & Reseller</h2>
+            
+            <div class="promo-item">
+                <span class="item-name">Adp</span>
+                <span class="item-price">15K</span>
+            </div>
+            
+            <div class="promo-item">
+                <span class="item-name">Reseller Panel</span>
+                <span class="item-price">13K</span>
+            </div>
+            
+            <div class="promo-item">
+                <span class="item-name">Pt Panel</span>
+                <span class="item-price">25K</span>
+            </div>
+            
+            <div class="promo-item">
+                <span class="item-name">Owner Panel</span>
+                <span class="item-price">35K</span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <button class="cta-button" onclick="window.location.href='https://wa.me/6287778002663'">
+                <span class="whatsapp-icon">📱</span> Pesan Sekarang!
+            </button>
+            <p class="expiry">Promo Berlaku Sampai 30 April</p>
+            <p>DE4YOU YT</p>
+        </div>
+    </div>
+</body>
+</html>
